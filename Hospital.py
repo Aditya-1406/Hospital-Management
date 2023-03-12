@@ -82,7 +82,7 @@ elif user1==4:
       from playsound import playsound
       playsound("alert.wav")
 
-el user1==5
+elif user1==5:
       print("  ---For Patient Registration please fill The details---   ")
       
       
