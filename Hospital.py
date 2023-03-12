@@ -62,4 +62,14 @@ elif user1==3:
             """)
       user3 = int(input("Select the Mode of Payment:- "))
       if user3 == 1:
-            print("""          
+            print("""                  
+            1. Download A*3 Hospital App from the Playstore or Appstore.
+            2. Login with your creditals and patient Name.
+            3. Go to payment section.
+            4. Your Due payment will reflect there.
+            5. Select the payment card and then click on pay.
+            6. Pay with any app or UPI ID.""")
+      elif user3==2:
+            from PIL import Image
+            myImage = Image.open("payment2.jpg")
+            myImage.show()
