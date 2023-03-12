@@ -62,7 +62,7 @@ elif user1==3:
             """)
       user3 = int(input("Select the Mode of Payment:- "))
       if user3 == 1:
-            print("""                  
+            print("""   
             1. Download A*3 Hospital App from the Playstore or Appstore.
             2. Login with your creditals and patient Name.
             3. Go to payment section.
@@ -73,3 +73,57 @@ elif user1==3:
             from PIL import Image
             myImage = Image.open("payment2.jpg")
             myImage.show()
+      else:
+            print("Not available")
+
+
+
+elif user1==4:
+      from playsound import playsound
+      playsound("alert.wav")
+
+el user1==5
+      print("  ---For Patient Registration please fill The details---   ")
+      
+      
+      from datetime import datetime
+      a = datetime.now()
+            
+      b = "A*3 Hospital"
+
+      name1 = input("Enter the Name of Patient: ")
+      Add = input("Enter the address of Patient: ")
+      city = input("Enter the city: ")
+      state = input("Enter the state: ")
+      Pin = int(input("Enter the pin code: "))
+      Phn = int(input("Enter the phone Number: "))
+      dob = input("Enter the DOB: ")
+      Email = input("Enter the Email id: ")
+      Sex = input("Enter the Sex: ")
+      Age= int(input("Enter the age: "))
+      Emer= input("Enter the Medical Problem: ")
+      doc= input("Enter the Doctor Name (if you fill this form by self then leave it):- ")
+      Sign = input("Enter the Name who fill the form: ")
+      c =  (f"""
+                              PATIENT REGISTRATION FORM
+            Today's Date:{a}                                 {b} 
+            ------------------------------------------------------------------------
+            PATIENT INFORMATION:
+            
+            Name:- {name1}
+            
+            Address:- {Add}
+            
+            City:- {city}            State:- {state}       Pin Code:{Pin}
+            
+            Phone Number:- {Phn}       
+            
+            DOB:- {dob}
+            
+            E-mail id:- {Email}    Sex:- {Sex}       Age:- {Age}  
+            
+            Problem:{Emer}         Refer Doctor:{doc}
+            
+            Password for medicines and laboratory:{z}
+            
+                                                                 Sign:{Sign}
