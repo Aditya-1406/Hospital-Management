@@ -192,3 +192,33 @@ elif user1==8:
 
             user8 = int(input("Enter the number respective to your inquiry: "))
             z1 = int(input("Enter the Medicine and Laboratory Code: "))
+            if user8 == 1 and z1 in range(1000):
+                  print ('''
+                  ========================================================================
+                  booking sent  for the Kidney function test please check your mail for confirmaton 
+                  ========================================================================
+                  ''')
+            if user8 == 2 and z1 in range(1000):
+                  print ('''
+                  ========================================================================
+                  booking sent  for the Liver Function test please check your mail for confirmaton 
+                  ========================================================================
+                  ''')       
+            if user8 == 3 and z1 in range(1000):
+                  print ('''
+                  ========================================================================
+                  booking sent  for the Lumbar Puncture test please check your mail for confirmaton 
+                  ========================================================================
+                  ''')
+            if user8 == 4 and z1 in range(1000):
+                  print ('''
+                  ========================================================================
+                  booking sent  for the Malabsorption test please check your mail for confirmaton 
+                  ========================================================================
+                  ''')
+
+
+
+  
+else:
+      print("Not Found")
