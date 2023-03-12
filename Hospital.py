@@ -82,7 +82,7 @@ elif user1==4:
       from playsound import playsound
       playsound("alert.wav")
 
-el user1==5
+elif user1==5:
       print("  ---For Patient Registration please fill The details---   ")
       
       
@@ -127,3 +127,68 @@ el user1==5
             Password for medicines and laboratory:{z}
             
                                                                  Sign:{Sign}
+--------------------------------------------------------------------------
+                              
+            """)
+      print(c)
+      
+      f = open(f'C:\\Users\\Aditya\\Desktop\\trials\\{name1}.txt','w')
+      f.writelines(c)
+      f.close
+      
+   
+elif user1==6: 
+            user5= input("Enter the ID:- ")
+            Pass2 = int(input("Enter The Password: "))
+            
+            if user5 == "greengold007" and Pass2 == 123456:
+                  print("TO CHECK THE DETAILS:-")     
+                  user4= input("Enter the Name of Patient:- ")
+                  f=open(f'C:\\Users\\Aditya\\Desktop\\trials\\{user4}.txt', 'r')
+                  print(f.read(),end="")
+                  f.close     
+
+
+elif user1==7:
+    
+             
+             print(" === Submit  medicines  password")  
+             pass3 = int(input("enter given  medicine  password:-"))
+             if pass3 in range(1000):
+                 print(''' 
+                 ===============
+                 order confirmed
+                 ===============
+            please show the slip to the delivery counter 
+                 
+                 ''')  
+             else:
+                 print('''
+      
+      no order on this password
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+       **             **      
+       check password and try again 
+       **             ***
+       ''')
+
+
+elif user1==8:
+            print('''
+               =================================
+                      laboratory area      
+               =================================       
+                      ''')
+            print ('''Select your required test
+            1.kidney function test.
+            2.liver function test.
+            3.lumbar puncture.
+            4.malabsorption test.
+
+            ''')
+
+            user8 = int(input("Enter the number respective to your inquiry: "))
+            z1 = int(input("Enter the Medicine and Laboratory Code: "))
